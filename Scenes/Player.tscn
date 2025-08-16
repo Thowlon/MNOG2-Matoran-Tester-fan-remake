@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://brqvxo3kfejj2"]
+
+[ext_resource type="Script" uid="uid://byy0o51u6dykg" path="res://Scripts/Scenes/player.gd" id="1_gntrk"]
+[ext_resource type="Script" uid="uid://vaadgiqbafqm" path="res://Scripts/Scenes/player_state.gd" id="1_kyqiw"]
+[ext_resource type="SpriteFrames" uid="uid://djrqi0lcwrao" path="res://Assets/SpriteFrames/Body_grey.tres" id="2_5ixxa"]
+[ext_resource type="SpriteFrames" uid="uid://ygmim8kuc7bl" path="res://Assets/SpriteFrames/Masks/Mask_Akaku_grey.tres" id="3_dewec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
+size = Vector2(142, 107)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_52ee3"]
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_gntrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -47.5)
+shape = SubResource("RectangleShape2D_kyqiw")
+disabled = true
+
+[node name="AS2D_Body" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_5ixxa")
+animation = &"CatchDisc_West"
+offset = Vector2(3, -118)
+
+[node name="AS2D_Mask" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("3_dewec")
+animation = &"TurnLeft_East"
+frame = 2
+frame_progress = 1.0
+offset = Vector2(0, -174)
+
+[node name="AS2D_Item" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_52ee3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="State" type="Node" parent="."]
+script = ExtResource("1_kyqiw")
+
+[node name="CharacterConfig" type="Node" parent="."]

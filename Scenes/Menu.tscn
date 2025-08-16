@@ -1,0 +1,1007 @@
+[gd_scene load_steps=20 format=3 uid="uid://r277ye7tkyhh"]
+
+[ext_resource type="Script" uid="uid://r8te7rqyat3" path="res://Scripts/Scenes/menu.gd" id="1_3kf3n"]
+[ext_resource type="PackedScene" uid="uid://brqvxo3kfejj2" path="res://Scenes/Player.tscn" id="2_6pedr"]
+[ext_resource type="Texture2D" uid="uid://cumep0nkrcitm" path="res://Assets/Mask_Icons/Hau.png" id="3_syfuq"]
+[ext_resource type="Texture2D" uid="uid://bse4a8q7c0kdb" path="res://Assets/Mask_Icons/Kaukau.png" id="4_a8aa6"]
+[ext_resource type="Texture2D" uid="uid://1suusbxom0u" path="res://Assets/Mask_Icons/Kakama.png" id="5_x0ao6"]
+[ext_resource type="Texture2D" uid="uid://ct3jjvn0xeygl" path="res://Assets/Mask_Icons/Pakari.png" id="6_dsmso"]
+[ext_resource type="Texture2D" uid="uid://cwp7l3wbw7avw" path="res://Assets/Mask_Icons/Miru.png" id="7_t8p2w"]
+[ext_resource type="Texture2D" uid="uid://dxrejk2apufuf" path="res://Assets/Mask_Icons/Akaku.png" id="8_krje8"]
+[ext_resource type="Texture2D" uid="uid://cifsudut1b7hb" path="res://Assets/Mask_Icons/Huna.png" id="9_dd46u"]
+[ext_resource type="Texture2D" uid="uid://h0jhkqnto1xt" path="res://Assets/Mask_Icons/Rau.png" id="10_n3nbb"]
+[ext_resource type="Texture2D" uid="uid://cdh1pmcpd21iv" path="res://Assets/Mask_Icons/Komau.png" id="11_dm44m"]
+[ext_resource type="Texture2D" uid="uid://t2amfw31opvv" path="res://Assets/Mask_Icons/Ruru.png" id="12_du1yi"]
+[ext_resource type="Texture2D" uid="uid://d0cemrr0hmnaw" path="res://Assets/Mask_Icons/Mahiki.png" id="13_c0stj"]
+[ext_resource type="Texture2D" uid="uid://i4kpe3euagpm" path="res://Assets/Mask_Icons/Matatu.png" id="14_3feh0"]
+[ext_resource type="StyleBox" uid="uid://bfqi1axlylfl8" path="res://Assets/Themes/Finished.tres" id="15_dsmso"]
+[ext_resource type="StyleBox" uid="uid://berq0tdfpf18x" path="res://Assets/Themes/WIP.tres" id="16_t8p2w"]
+[ext_resource type="StyleBox" uid="uid://cvkc61vqxj1hs" path="res://Assets/Themes/Bug.tres" id="17_t8p2w"]
+[ext_resource type="StyleBox" uid="uid://c3t0br3sp6iuc" path="res://Assets/Themes/Uncomplete.tres" id="18_krje8"]
+[ext_resource type="StyleBox" uid="uid://dahambnqdvf4q" path="res://Assets/Themes/Missing.tres" id="19_dd46u"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_3kf3n")
+
+[node name="Player" parent="." instance=ExtResource("2_6pedr")]
+position = Vector2(431, 496)
+
+[node name="Masks" type="CanvasLayer" parent="."]
+
+[node name="btn_Hau" type="Button" parent="Masks"]
+offset_left = 215.0
+offset_top = 17.0
+offset_right = 277.0
+offset_bottom = 70.0
+icon = ExtResource("3_syfuq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Kaukau" type="Button" parent="Masks"]
+offset_left = 289.0
+offset_top = 16.0
+offset_right = 351.0
+offset_bottom = 69.0
+icon = ExtResource("4_a8aa6")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Kakama" type="Button" parent="Masks"]
+offset_left = 362.0
+offset_top = 16.0
+offset_right = 424.0
+offset_bottom = 69.0
+icon = ExtResource("5_x0ao6")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Pakari" type="Button" parent="Masks"]
+offset_left = 436.0
+offset_top = 16.0
+offset_right = 498.0
+offset_bottom = 69.0
+icon = ExtResource("6_dsmso")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Miru" type="Button" parent="Masks"]
+offset_left = 509.0
+offset_top = 16.0
+offset_right = 571.0
+offset_bottom = 69.0
+icon = ExtResource("7_t8p2w")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Akaku" type="Button" parent="Masks"]
+offset_left = 579.0
+offset_top = 16.0
+offset_right = 641.0
+offset_bottom = 69.0
+icon = ExtResource("8_krje8")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Huna" type="Button" parent="Masks"]
+offset_left = 215.0
+offset_top = 79.0
+offset_right = 277.0
+offset_bottom = 132.0
+icon = ExtResource("9_dd46u")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Rau" type="Button" parent="Masks"]
+offset_left = 290.0
+offset_top = 78.0
+offset_right = 352.0
+offset_bottom = 131.0
+icon = ExtResource("10_n3nbb")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Komau" type="Button" parent="Masks"]
+offset_left = 363.0
+offset_top = 79.0
+offset_right = 425.0
+offset_bottom = 132.0
+icon = ExtResource("11_dm44m")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Ruru" type="Button" parent="Masks"]
+offset_left = 435.0
+offset_top = 80.0
+offset_right = 497.0
+offset_bottom = 133.0
+icon = ExtResource("12_du1yi")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Mahiki" type="Button" parent="Masks"]
+offset_left = 507.0
+offset_top = 81.0
+offset_right = 569.0
+offset_bottom = 134.0
+icon = ExtResource("13_c0stj")
+icon_alignment = 1
+expand_icon = true
+
+[node name="btn_Matatu" type="Button" parent="Masks"]
+offset_left = 578.0
+offset_top = 80.0
+offset_right = 640.0
+offset_bottom = 133.0
+icon = ExtResource("14_3feh0")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Directions" type="CanvasLayer" parent="."]
+
+[node name="btn_South" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 182.0
+offset_bottom = 60.0
+text = "South"
+
+[node name="btn_SouthWest" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 69.0
+offset_right = 182.0
+offset_bottom = 116.0
+text = "South West"
+
+[node name="btn_West" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 126.0
+offset_right = 182.0
+offset_bottom = 173.0
+text = "West"
+
+[node name="btn_NorthWest" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 184.0
+offset_right = 182.0
+offset_bottom = 231.0
+text = "North West"
+
+[node name="btn_North" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 239.0
+offset_right = 182.0
+offset_bottom = 286.0
+text = "North"
+
+[node name="btn_NorthEast" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 297.0
+offset_right = 182.0
+offset_bottom = 344.0
+text = "North East"
+
+[node name="btn_East" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 356.0
+offset_right = 182.0
+offset_bottom = 403.0
+text = "East"
+
+[node name="btn_SouthEast" type="Button" parent="Directions"]
+offset_left = 15.0
+offset_top = 414.0
+offset_right = 182.0
+offset_bottom = 461.0
+text = "South East"
+
+[node name="Animations" type="CanvasLayer" parent="."]
+
+[node name="btn_Idle" type="Button" parent="Animations"]
+offset_left = 656.0
+offset_top = 16.0
+offset_right = 735.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("15_dsmso")
+text = "Idle"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_TurnLeft" type="Button" parent="Animations"]
+offset_left = 738.0
+offset_top = 16.0
+offset_right = 817.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Turn Left"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_TurnRight" type="Button" parent="Animations"]
+offset_left = 821.0
+offset_top = 16.0
+offset_right = 900.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("17_t8p2w")
+text = "Turn Right"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Walk" type="Button" parent="Animations"]
+offset_left = 903.0
+offset_top = 16.0
+offset_right = 982.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Walk"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Run" type="Button" parent="Animations"]
+offset_left = 985.0
+offset_top = 16.0
+offset_right = 1064.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Run"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Skid" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 16.0
+offset_right = 1145.0
+offset_bottom = 52.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("18_krje8")
+text = "Skid"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StandJump" type="Button" parent="Animations"]
+offset_left = 656.0
+offset_top = 69.0
+offset_right = 735.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("18_krje8")
+text = "Standing jump"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_LongJump" type="Button" parent="Animations"]
+offset_left = 738.0
+offset_top = 69.0
+offset_right = 817.0
+offset_bottom = 105.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("18_krje8")
+text = "Long Jump"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ClimbUp" type="Button" parent="Animations"]
+offset_left = 656.0
+offset_top = 108.0
+offset_right = 735.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Climb Up"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ClimbDown" type="Button" parent="Animations"]
+offset_left = 738.0
+offset_top = 108.0
+offset_right = 817.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Climb Down"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_PickUpHeavy" type="Button" parent="Animations"]
+offset_left = 821.0
+offset_top = 108.0
+offset_right = 900.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Pick up heavy"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_CarryHeavy" type="Button" parent="Animations"]
+offset_left = 903.0
+offset_top = 108.0
+offset_right = 982.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Walk caryying Heavy"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_PickUp" type="Button" parent="Animations"]
+offset_left = 985.0
+offset_top = 108.0
+offset_right = 1064.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Pick up"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_UseItem" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 108.0
+offset_right = 1145.0
+offset_bottom = 144.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Use item"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_OpenInv" type="Button" parent="Animations"]
+offset_left = 656.0
+offset_top = 148.0
+offset_right = 735.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Open Backpack"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_RummageInv" type="Button" parent="Animations"]
+offset_left = 738.0
+offset_top = 148.0
+offset_right = 817.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Rummage"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_CloseInv" type="Button" parent="Animations"]
+offset_left = 821.0
+offset_top = 148.0
+offset_right = 900.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("16_t8p2w")
+text = "Close Backpack"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StartWork" type="Button" parent="Animations"]
+offset_left = 903.0
+offset_top = 148.0
+offset_right = 982.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Start Work"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_WorkLoop" type="Button" parent="Animations"]
+offset_left = 985.0
+offset_top = 148.0
+offset_right = 1064.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Work Loop"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StopWork" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 148.0
+offset_right = 1145.0
+offset_bottom = 184.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stop Work"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ReadyDisc" type="Button" parent="Animations"]
+offset_left = 656.0
+offset_top = 188.0
+offset_right = 735.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Ready Disc"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ThrowDisc" type="Button" parent="Animations"]
+offset_left = 738.0
+offset_top = 188.0
+offset_right = 817.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Throw Disc"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_CatchDisc" type="Button" parent="Animations"]
+offset_left = 821.0
+offset_top = 188.0
+offset_right = 900.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Catch Disc"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Cast" type="Button" parent="Animations"]
+offset_left = 903.0
+offset_top = 188.0
+offset_right = 982.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Cast"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ReelIn" type="Button" parent="Animations"]
+offset_left = 985.0
+offset_top = 188.0
+offset_right = 1064.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Reel In"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_GetHit" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 239.0
+offset_right = 734.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Get Hit"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Stunned" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 239.0
+offset_right = 816.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stunned"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ShakeOff" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 239.0
+offset_right = 898.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Shake off"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ItemCheer" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 239.0
+offset_right = 981.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Item Cheer"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Cheer" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 239.0
+offset_right = 1063.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Cheer"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Disappoint" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 239.0
+offset_right = 1145.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 9
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Disappointment"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StartSmallCheer" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 279.0
+offset_right = 734.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Start small cheer"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_SmallCheerLoop" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 279.0
+offset_right = 816.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Small cheer loop"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StopSmallCheer" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 279.0
+offset_right = 898.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stop small cheer"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_LookAround" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 329.0
+offset_right = 734.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Look around"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_LookSelf" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 329.0
+offset_right = 816.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Look self"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Suprised" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 329.0
+offset_right = 898.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Surprised"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Nod" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 329.0
+offset_right = 981.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Nod"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ShakeHead" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 329.0
+offset_right = 1063.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Shake Head"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Shrug" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 329.0
+offset_right = 1145.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Shrug"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ScratchHead" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 370.0
+offset_right = 734.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Scratch Head"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Greet" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 370.0
+offset_right = 816.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Greet"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StartThreat" type="Button" parent="Animations"]
+offset_left = 820.0
+offset_top = 370.0
+offset_right = 899.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Start Threaten"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_ThreatLoop" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 370.0
+offset_right = 981.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Threaten loop"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StopThreat" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 370.0
+offset_right = 1063.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stop threaten"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StartTalk01" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 418.0
+offset_right = 734.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Start talk 1"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Talk01Loop" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 418.0
+offset_right = 816.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Talk 1 Loop"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StopTalk01" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 418.0
+offset_right = 898.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stop talk 2"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StartTalk02" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 418.0
+offset_right = 981.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Start talk 2"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Talk02Loop" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 418.0
+offset_right = 1063.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Talk 2 loop"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_StopTalk02" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 418.0
+offset_right = 1145.0
+offset_bottom = 454.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Stop talk 2"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_TradWater" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 465.0
+offset_right = 734.0
+offset_bottom = 501.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Tread water"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_Swim" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 465.0
+offset_right = 816.0
+offset_bottom = 501.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Swim"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_SwimUp" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 465.0
+offset_right = 898.0
+offset_bottom = 501.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Swim up"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_SwimDown" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 465.0
+offset_right = 981.0
+offset_bottom = 501.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Swim down"
+alignment = 0
+text_overrun_behavior = 2
+clip_text = true
+
+[node name="btn_KolhiiIdle" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 512.0
+offset_right = 734.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii idle"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiTurnLeft" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 512.0
+offset_right = 816.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii turn left"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiTurnRight" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 512.0
+offset_right = 898.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii turn right"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiRun" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 512.0
+offset_right = 981.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii run"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiLookAround" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 512.0
+offset_right = 1063.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii look around"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiPass" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 512.0
+offset_right = 1145.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii pass"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiCatch" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 552.0
+offset_right = 734.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii catch"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiShoot" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 552.0
+offset_right = 816.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii shoot"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiBlock" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 552.0
+offset_right = 898.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii block"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiBlocked" type="Button" parent="Animations"]
+offset_left = 902.0
+offset_top = 552.0
+offset_right = 981.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii blocked"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiStunned" type="Button" parent="Animations"]
+offset_left = 984.0
+offset_top = 552.0
+offset_right = 1063.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii stunned"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiShakeOff" type="Button" parent="Animations"]
+offset_left = 1066.0
+offset_top = 552.0
+offset_right = 1145.0
+offset_bottom = 588.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii shake off"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiSurprised" type="Button" parent="Animations"]
+offset_left = 655.0
+offset_top = 593.0
+offset_right = 734.0
+offset_bottom = 629.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii surprised"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiCheer" type="Button" parent="Animations"]
+offset_left = 737.0
+offset_top = 593.0
+offset_right = 816.0
+offset_bottom = 629.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii cheer"
+text_overrun_behavior = 2
+
+[node name="btn_KolhiiDisappointment" type="Button" parent="Animations"]
+offset_left = 819.0
+offset_top = 593.0
+offset_right = 898.0
+offset_bottom = 629.0
+theme_override_font_sizes/font_size = 9
+theme_override_styles/normal = ExtResource("19_dd46u")
+text = "Kolhii disappointment"
+text_overrun_behavior = 2
